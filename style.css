@@ -1,0 +1,130 @@
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px; 
+    border: 5px solid black;
+    flex-direction: column;
+    background: grey;
+    border-radius: 30px;
+    background-color:yellow;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 0 28px;
+    width: 500px;
+    
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 50px;
+} 
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons-container {
+    display: flex;
+    justify-content: center;
+  }
+.img{
+    display: flex;
+    align-content: center;
+}
+.image-container {
+    background-image: url("SPORTSY.png");
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+ #h1{
+    color:yellow;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'roboto';
+    font-size: 60px;
+    position: relative;
+    bottom: 100px; right: 150px;
+ }
+ #h2{
+    color:yellow;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'roboto';
+    font-size: 40px;
+    position: relative;
+    bottom: 80px; right: 150px;
+ }
+ .buttons-container{
+    border-radius: 30px;
+ }
+ .block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+ }
+ .button1{
+    color: yellow;
+    background-color: black;
+    border-radius: 30px;
+    font-family: 'poppins';
+    box-shadow: 10px 5px 5px black;
+ }
+ .button2{
+    color:black;
+    background-color: grey;
+    border-radius: 30px;
+    font-family: 'poppins';
+    box-shadow: 10px 5px 5px black;
+    border: solid 
+ }
+ .password{
+    color:yellow;
+    background-color: black;
+    border-radius: 30px;
+    font-family: 'poppins';
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+ }
+ #password input[type="password"] {
+    border-radius: 30px;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    font-family: 'poppins';
+
+  }
+  .submit input[type="text"] {
+    background-color: black;
+    color:yellow;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    font-family: 'poppins';
+    
+  }
+  .buttons-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    align-content: space-around;
+  }
+  
+  .submit, .buttonx, .button {
+    justify-self: center;
+  }
