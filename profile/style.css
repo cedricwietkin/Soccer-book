@@ -79,11 +79,21 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
 
 /** caraousel */
 
-.carousel {
-    position: relative;
 
+.carousel{
+    position: relative;
+    overflow: hidden;
 }
 
+.carousel-item{
+    float: left;
+}
+
+.carousel-container::after{
+    content: '';
+    clear: both;
+    display: table;
+}
 
 /** footer */
 
