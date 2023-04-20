@@ -1,0 +1,116 @@
+body{
+    background-color: black;
+}
+
+/** header */
+
+#ContainerNav{
+    display: flex;
+    flex-direction: row  ;
+    background: yellow;
+    width: auto;
+    height: 55px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+#logo{
+    width: 143px;
+    height: 136px;
+    margin: 100px;
+}
+
+
+nav  a{ /* tous les liens a à l'intérieur de la balise nav */
+    float: left; /* effet flottant */
+    text-decoration: none; /* pas d'héritage avec effet souligné */
+    color: #ffffff; /* couleur du texte */
+    background: yellow; /* couleur de fond */
+    height: 55px; /* hauteur */
+    line-height: 33px; /* interligne */
+    padding: 0 25px; /* marges intérieur */
+    font-family: sans-serif; /* police d'écriture */
+    font-size: 13px; /* taille du texte */
+    transition: .5s; /* temps de transition lors du hover : une demi seconde */
+    }
+    nav  a:hover{ /* tous liens lors du survol dans la balise nav */
+    background: #f43c80; /* couleur de fond */
+    display: flex;
+    justify-content: space-between
+    }
+
+/** main */
+
+.bloc1{
+    margin-top: 75px;
+    margin-left: 10%;
+}
+
+.baniere{
+    width: calc(100%/1);
+}
+
+.pipo{
+    display: flex;
+    margin-top: 20px;
+}
+
+.infojoueur{
+    background-color: gray;
+    width: 500px;
+    margin-left: 23.75%;
+}
+
+.bloc2{
+    margin-top: 50px;
+    margin-left: 10%;
+    display: flex;
+}
+
+.stat{
+    background-color: gray;
+    width: 500px;
+}
+
+.lesbouttons{
+    margin-left: 21%;
+}
+
+/** caraousel */
+
+.carousel {
+    position: relative;
+
+}
+
+
+/** footer */
+
+footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(57, 71%, 73%);
+    }
+    
+    /*a:visited {
+        color: purple;
+    } */
+    footer a:hover, a:focus {
+        color: hsl(0, 0%, 87%);
+    }
+    
+    footer a:active {
+        color: rgb(235, 137, 137);
+    }
+    
+    
+    footer {
+        text-align: center;
+    }
+    
+    
+    .info, .social-media {
+        display: inline-block;
+        margin-inline: 3rem;
+    }
