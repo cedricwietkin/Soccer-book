@@ -1,130 +1,159 @@
-#container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px; 
-    border: 5px solid black;
-    flex-direction: column;
-    background: grey;
-    border-radius: 30px;
-    background-color:yellow;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+* { 
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    margin: 40px 0 0;
-    padding: 20px 0 28px;
-    width: 500px;
-    
 }
-.button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    border-radius: 50px;
-} 
-body{
-    background-color: black;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.buttons-container {
-    display: flex;
-    justify-content: center;
-  }
-.img{
-    display: flex;
-    align-content: center;
-}
-.image-container {
-    background-image: url("SPORTSY.png");
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-  }
- #h1{
-    color:yellow;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    font-family: 'roboto';
-    font-size: 60px;
-    position: relative;
-    bottom: 100px; right: 150px;
- }
- #h2{
-    color:yellow;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    font-family: 'roboto';
-    font-size: 40px;
-    position: relative;
-    bottom: 80px; right: 150px;
- }
- .buttons-container{
-    border-radius: 30px;
- }
- .block{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: space-around;
- }
- .button1{
-    color: yellow;
-    background-color: black;
-    border-radius: 30px;
-    font-family: 'poppins';
-    box-shadow: 10px 5px 5px black;
- }
- .button2{
-    color:black;
-    background-color: grey;
-    border-radius: 30px;
-    font-family: 'poppins';
-    box-shadow: 10px 5px 5px black;
-    border: solid 
- }
- .password{
-    color:yellow;
-    background-color: black;
-    border-radius: 30px;
-    font-family: 'poppins';
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
- }
- #password input[type="password"] {
-    border-radius: 30px;
-    background-color: black;
-    color: yellow;
-    display: flex;
-    align-items: center;
-    font-family: 'poppins';
-
-  }
-  .submit input[type="text"] {
-    background-color: black;
-    color:yellow;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    font-family: 'poppins';
-    
-  }
-  .buttons-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    gap: 10px;
-    align-content: space-around;
-  }
   
-  .submit, .buttonx, .button {
-    justify-self: center;
-  }
+html {
+    scroll-behavior: smooth;
+}
+
+body   {
+	font-family: 'Roboto', sans-serif;
+    margin:0.5rem;
+    background-image: url("android-chrome-192x192.png"),linear-gradient(to right, #626262, #000);        
+    background-repeat: repeat-y, no-repeat;
+    background-position: center;
+    /* background-size: 2% auto ;  */
+}
+
+/* nav ul {
+    list-style-type: none;
+    text-align: center;
+	background-color: yellow;
+    margin: 0
+}
+
+nav li {
+    display: inline-block;
+    margin-inline: 5rem;
+} */
+
+/* nav li a:hover, nav li a:focus {
+        text-decoration: underline;
+    /* }  
+     doesn't work*/
+.black {
+    width: 100%;
+    height: 144px;
+    background-color: black;
+    position: fixed;
+    margin-top: -10px;
+    padding-top: -10px;
+    
+}
+
+#ContainerNav{
+    display: flex;
+    flex-direction: row  ;
+        background: yellow;
+        width: auto;
+        height: 55px;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 40px;
+        position: fixed;
+        width: 100%;
+    }
+
+    
+.LienNavbar {
+    padding : 20px;
+}
+
+/* .logo img, .profil-picture img {
+    width: 50px;
+    padding: 15px 0;
+}
+ */
+/* .icons img {
+    width: 25px;
+    padding: 25px 0 ;
+} */
+
+#container1, #container2, #container3 {
+    width: 75% ;
+    margin: 10rem auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: hsl(0, 0%, 38%, 50%);
+    /* text-align: center; */
+}
+
+#container1 img, #container2 img, #container3 img{
+    width: 30%;
+    height: auto;
+    border-radius: 10%;
+}
+
+#container1 div, #container2 div, #container3 div {
+    /* display: inline-block; */
+    margin: 0; 
+    padding: 1rem;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+td {
+    line-height: 2rem;
+}
+
+fieldset {
+    line-height: 2.5rem;
+    padding: 0.5rem;
+}
+
+button {
+    display: block;
+    background-color: yellow;
+    margin: 1rem auto 0 auto;
+}
+
+input, button {
+font: inherit;
+}
+
+
+footer a {
+text-decoration: none;
+cursor: pointer;
+color: hsl(57, 100%, 50%);
+background-color: black;
+}
+
+/*a:visited {
+	color: purple;
+} */
+footer a:hover, a:focus {
+	color: hsl(69, 100%, 58%);
+    text-decoration: underline;
+    
+}
+
+footer ::marker {
+  list-style-image: url(favicon-16x16.png);
+}
+
+footer a:active {
+	color: rgb(255, 0, 0);
+}
+
+
+footer {
+    text-align: center;
+}
+
+
+.info li, .social-media li {
+    display: inline-block;
+    margin-inline: 1.5rem;
+    padding: 0.4rem;
+}
+
+footer p {
+    color: red ;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Digital Sprint Becode TC">
+    <meta name="description" content="Soccer book reservation page">
+    <title>Mes réservations</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+       <!--  <nav>
+                <ul>
+                    <li class="logo">
+                        <img src="logo.svg" alt="Logo Soccer Book">
+                    </li>
+                    <li class="icons">
+                        <a href="homepage.com"><img src="Home.svg" alt="Home page icon"></a>
+                    </li>
+                    <li class="icons">
+                        <a href="/"><img src="Ami(e)s.svg" alt="Profil icon"></a>
+                    </li>
+                    <li class="icons">
+                        <a href="/"><img src="reservations.svg" alt="Reservation icon"></a>
+                    </li>
+                    <li class="icons">
+                        <a href="/"><img src="Notif.svg" alt="Notification Bell icon"></a>
+                    </li>
+                    <li class="profil-picture">
+                        <img src="profil picture.svg" alt="Profil picture">
+                    </li>
+                </ul>
+        </nav> -->
+
+        <nav>
+            <div class="black"></div>
+            <div id="ContainerNav">
+                <div id="Logo">
+                    <img src="Logo.svg">
+                </div>
+                <div id="LienNav">
+                    <a class="LienNavbar" href=""><img src="Home.svg" alt="Home page icon"></a>
+                    <a class="LienNavbar" href=""><img src="Ami(e)s.svg" alt="Partage page icon"></a>
+                    <a class="LienNavbar" href=""><img src="Story.svg" alt="Diffusion page icon"></a>
+                    <a class="LienNavbar" href=""><img src="Notif.svg" alt="Notif page icon"></a>
+                </div>
+                <div id="IconProfil">
+                    <img src="profil picture.svg">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section id="container1">
+                <div>
+                    <img src="hall-omnisport-de-bressoux.jpeg" alt="Photo hall omnisport 1" title="Hall omnisport 1" width="1024" height="684">
+                    <table>
+                        <tr>
+                                <td><strong>Nom:</strong></td>
+                                <td>Hall omnisport 1</td>
+                        </tr>
+                        <tr>
+                                <td><strong>Adresse:</strong></td>
+                                <td>1 Rue X - 4000 Liège</td>
+                        </tr>
+                        <tr>
+                                <td><strong>Numéro:</strong></td>
+                                <td>+32490123456</td>
+                        </tr>
+                        <tr>
+                                <td><strong>E-mail:</strong></td>
+                                <td>hallomnisport1@gmail.com</td>
+                        </tr>
+                    </table>
+                    <form method="post">
+                        <fieldset>
+                            <legend>Inscription</legend>
+                            <p>
+                                <label for="date"><strong>Sélectionner une date:</strong></label>
+                                <input type="datetime-local" id="date" name="date" required >
+                            </p>
+                            <p>
+                                <label for="age"><strong>Sélectionner un âge:</strong></label>
+                                <select name="age" id="age" >                       
+                                    <option value="16-20">16-20 ans</option>
+                                    <option value="21-25">21-25 ans</option>
+                                    <option value="26-30">26-29 ans</option>
+                                    <option value="31-35">30-35 ans</option>
+                                    <option value="36-40">36-39 ans</option>
+                                    <option value="41-50">41-50 ans</option>
+                                    <option value="51-60">51-60 ans</option>
+                                    <option value="+60">+60 ans</option>
+                                </select>
+                            </p>
+                            <p>
+                                <strong>Sélectionner un niveau:</strong>
+                                <input type="radio" name="niveau" id="loisir" value="loisir">
+                                <label for="loisir">Loisir</label>
+                                <input type="radio" name="niveau" id="classé" value="classé">
+                                <label for="classé">Classé</label>
+                            </p>
+                            <button class="button" type="button">Réserver</button>  
+                        </fieldset>    
+                    </form>
+                </div>  
+        </section>
+        <section id="container2">
+                <div>
+                    <img src="hall-omnisport-outremeuse.jpeg" alt="Photo hall omnisport 2" title="Hall omnisport 2" width="600" height="400">
+                    <table>
+                        <tr>
+                                <td><strong>Nom:</strong></td>
+                                <td>Hall omnisport 2</td>
+                        </tr>
+                        <tr>
+                                <td><strong>Adresse:</strong></td>
+                                <td>1 Rue Y - 4000 Liège</td>
+                        </tr>
+                        <tr>
+                                <td><strong>Numéro:</strong></td>
+                                <td>+32490123456</td>
+                        </tr>
+                        <tr>
+                                <td><strong>E-mail:</strong></td>
+                                <td>hallomnisport2@gmail.com</td>
+                        </tr>
+                    </table>
+                    <form method="post">
+                        <fieldset>
+                            <legend>Inscription</legend>
+                            <p>
+                                <label for="date"><strong>Sélectionner une date:</strong></label>
+                                <input type="datetime-local" id="date" name="date" required >
+                            </p>
+                            <p>
+                                <label for="age"><strong>Sélectionner un âge:</strong></label>
+                                <select name="age" id="age" >                       
+                                    <option value="16-20">16-20 ans</option>
+                                    <option value="21-25">21-25 ans</option>
+                                    <option value="26-30">26-29 ans</option>
+                                    <option value="31-35">30-35 ans</option>
+                                    <option value="36-40">36-39 ans</option>
+                                    <option value="41-50">41-50 ans</option>
+                                    <option value="51-60">51-60 ans</option>
+                                    <option value="+60">+60 ans</option>
+                                </select>
+                            </p>
+                            <p>
+                                <strong>Sélectionner un niveau:</strong>
+                                <input type="radio" name="niveau" id="loisir" value="loisir">
+                                <label for="loisir">Loisir</label>
+                                <input type="radio" name="niveau" id="classé" value="classé">
+                                <label for="classé">Classé</label>
+                            </p>
+                            <button class="button" type="button">Réserver</button>  
+                        </fieldset>    
+                    </form>
+                </div>  
+        </section>
+        <section id="container3">
+                <div>
+                    <figure></figure>
+                    <img src="hall-omnisport-3.jpg" alt="Photo hall omnisport 3" title="Hall omnisport 3" width="864" height="486">
+                    <table>
+                        <tr>
+                                <td><strong>Nom:</strong></td>
+                                <td>Hall omnisport 3</td>
+                        </tr>
+                        <tr>
+                                <td><strong>Adresse:</strong></td>
+                                <td>1 Rue Z - 4000 Liège</td>
+                        </tr>
+                        <tr>
+                                <td><strong>Numéro:</strong></td>
+                                <td>+32490123456</td>
+                        </tr>
+                        <tr>
+                                <td><strong>E-mail:</strong></td>
+                                <td>hallomnisport3@gmail.com</td>
+                        </tr>
+                    </table>
+                    <form method="post">
+                        <fieldset>
+                            <legend>Inscription</legend>
+                            <p>
+                                <label for="date"><strong>Sélectionner une date:</strong></label>
+                                <input type="datetime-local" id="date" name="date" required >
+                            </p>
+                            <p>
+                                <label for="age"><strong>Sélectionner un âge:</strong></label>
+                                <select name="age" id="age" >                       
+                                    <option value="16-20">16-20 ans</option>
+                                    <option value="21-25">21-25 ans</option>
+                                    <option value="26-30">26-29 ans</option>
+                                    <option value="31-35">30-35 ans</option>
+                                    <option value="36-40">36-39 ans</option>
+                                    <option value="41-50">41-50 ans</option>
+                                    <option value="51-60">51-60 ans</option>
+                                    <option value="+60">+60 ans</option>
+                                </select>
+                            </p>
+                            <p>
+                                <strong>Sélectionner un niveau:</strong>
+                                <input type="radio" name="niveau" id="loisir" value="loisir">
+                                <label for="loisir">Loisir</label>
+                                <input type="radio" name="niveau" id="classé" value="classé">
+                                <label for="classé">Classé</label>
+                            </p>
+                            <button class="button" type="button">Réserver</button>  
+                        </fieldset>    
+                    </form>
+                </div>  
+        </section>
+    </main>
+    <footer>
+        <div class="info">
+            <ul>
+                <li><a href="/">Conditions d'utilisation</a></li>
+                <li><a href="/">Politiques de confidentialité</a></li>
+                <li><a href="/">Cookies</a></li>
+                <li><a href="/">Partenariats</a></li>
+                <li><a href="/">Sport</a></li>
+            </ul>
+        </div>
+        <ul class="social-media">
+            <li><a href="/">Facebook</a></li>
+            <li><a href="/">Twitter</a></li>
+            <li><a href="/">Instagram</a></li>
+            <li><a href="/">Youtube</a></li>
+        </ul>
+        <br> 
+        <p><a href="about.html">About Us</a></p>
+        <br>
+        <p>
+            <a href="#">Retour au début de la page</a>
+        </p>
+    </footer>
+</body>
+
+</html>    
