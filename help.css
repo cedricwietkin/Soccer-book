@@ -1,0 +1,36 @@
+.black {
+    width: 100%;
+    height: 144px;
+    background-color: black;
+    position: fixed;
+    margin-top: -10px;
+    padding-top: -10px;
+    position: fixed;
+
+}
+
+#ContainerNav{
+    display: flex;
+    flex-direction: row  ;
+        background: yellow;
+        width: auto;
+        height: 55px;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 40px;
+        position: fixed;
+        width: 100%;
+    }
+
+
+.LienNavbar {
+    padding : 20px;
+}
+h2{
+    font-family: 'roboto';
+    font-size: 40px;
+    color: yellow;
+}
+main{
+    background-color: black;
+}
