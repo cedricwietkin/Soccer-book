@@ -1,0 +1,137 @@
+html{
+    background-color: black;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0px;
+    
+  }
+  .buttonfaq {
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+  }
+  .pop{
+    background-color:grey;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    margin-right: 100px;
+    margin-top: 100px;
+  }
+  .block{
+    display: flex;
+    /*display:block;*/
+    justify-content: flex-end;
+  }
+  .img a{
+    width: 50px;
+    height: 50px;
+  }
+  main{
+    background-color: black;
+    display: flex;
+
+  }
+  h1{
+    color:yellow;
+    display: flex;
+    font-family: 'roboto';
+    font-size: 60px;
+    margin: 100px;
+ }
+ h2{
+    color:yellow;
+    display: flex;
+    font-family: 'roboto';
+    font-size: 40px;
+    margin: 100px;
+    
+ }
+ h3{
+    color:yellow;
+    display: flex;
+    font-family: 'roboto';
+    font-size: 40px;
+    margin: 100px;
+ }
+ .button{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 50px;
+    }
+ .button1{
+    color: black;
+    background-color: yellow;
+    border-radius: 20px;
+    font-family: 'poppins';
+    box-shadow: 5px 5px 5px black;
+    font-size: 20px;
+    width: 200px;
+    border: solid;
+    display: flex;
+    justify-content: center;
+ }
+ .button2{
+    color: yellow;
+    background-color: black;
+    border-radius: 20px;
+    font-family: 'poppins';
+    box-shadow: 5px 5px 5px black;
+    width:200px;
+    font-size: 20px;
+    border: solid;
+ }
+ #password input[type="password"] {
+    border: solid 4px;
+    border-radius: 20px;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    font-family: 'poppins';
+    font-size: 18px;
+    height: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+
+  }
+  .submit input[type="text"] {
+    border: solid 4px;
+    background-color: black;
+    color:yellow;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'poppins';
+    font-size: 18px;
+    height:50px;
+    width: 300px;
+    margin-bottom: 50px;
+    }
+    .container{
+        width: 400px;
+        height: 400px;
+        display: flex;
+        align-items: center ;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+        display: flex;
+    }
+    .a{
+        display: flex;
+    justify-content: center;
+    }
