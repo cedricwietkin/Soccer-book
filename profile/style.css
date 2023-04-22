@@ -81,6 +81,7 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
 
 .carousel{
     position: relative;
+    overflow: hidden;
 }
 
 .carousel-item{
@@ -99,16 +100,16 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
     display: table;
 }
 
-.carousel-next, .carousel-prev {
+.carousel-next{
+    position: absolute;
     width: 40px;
     height: 40px;
-    background-color: fff;
-    background-image: url(Polygon\ 3.svg) center center no-repeat;
+    background: #ffffff url(Polygon\ 3\ \(1\).svg) center no-repeat; 
     background-size: 20px;
     border-radius: 50%;
     top: 50%;
     margin-top: -20px;
-    right: -20px;
+    right: 0px;
     cursor: pointer;
     transition: transform 0.3s;
 }
@@ -118,10 +119,18 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
 }
 
 .carousel-prev{
-    background-image: url(Polygon\ 3\ \(1\).svg);
-    right: auto;
-    left: -20px;
-}
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #ffffff url(Polygon\ 3.svg) center no-repeat; 
+    background-size: 20px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}  
+
 
 
 /** footer */

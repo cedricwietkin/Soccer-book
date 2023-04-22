@@ -59,13 +59,13 @@ class carrousel {
         this.root.appendChild(prevButton)
         nextButton.addEventListener('click', this.next.bind(this))
         prevButton.addEventListener('click', this.prev.bind(this))
-        this.onMove(index => {
+       /* this.onMove(index => {
             if (index === 0) {
                 nextButton.classList.add('carousel-next-hidden')
             } else {
                 nextButton.classList.remove('carousel-next-hidden')   
             }
-        })
+        })*/
     }
 
     next () {
@@ -86,7 +86,7 @@ class carrousel {
     gotoItem (index) {
         if (index < 0){
             index = this.items.length - this.options.slidesVisible
-        } else if (index >=this.items.length || this.items[this.currentItem +this.options.slidesVisible] === undefined) {
+        } else if (index >=this.items.length || (this.items[this.currentItem + this.options.slidesVisible] === undefined && index >this.currentItem)) {
             index = 0
         }
         let translateX = index * -100 / this.items.length
