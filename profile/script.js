@@ -21,9 +21,10 @@ class carrousel {
         this.options = Object.assign({}, {
             slidesToScroll: 1,
             slidesVisible: 1,
-            loop: false
+            loop: true
         }, options)
         let children = [].slice.call(element.children)
+        this.isMobile = false
         this.currentItem = 0
         this.root = this.createDivWithClaass('carousel')
         this.container = this.createDivWithClaass('carousel-container')
@@ -38,6 +39,8 @@ class carrousel {
         })
         this.setStyle()
         this.createNavigation()
+        this.resize()
+        window.addEventListener('resize', this.resize.bind(this))
     }
 
 
@@ -46,9 +49,9 @@ class carrousel {
     * applique les bonnes dimensions au carrousel
     */
     setStyle () {
-        let ratio = this.items.length / this.options.slidesVisible
+        let ratio = this.items.length / this.slidesVisible
         this.container.style.width = (ratio * 100) + "%"
-        this.items.forEach(item => item.style.width = ((100 / this.options.slidesVisible) / ratio) + "%")
+        this.items.forEach(item => item.style.width = ((100 / this.slidesVisible) / ratio) + "%")
     }
 
 
@@ -59,7 +62,7 @@ class carrousel {
         this.root.appendChild(prevButton)
         nextButton.addEventListener('click', this.next.bind(this))
         prevButton.addEventListener('click', this.prev.bind(this))
-       /* this.onMove(index => {
+        /*this.onMove(index => {
             if (index === 0) {
                 nextButton.classList.add('carousel-next-hidden')
             } else {
@@ -69,11 +72,11 @@ class carrousel {
     }
 
     next () {
-        this.gotoItem(this.currentItem + this.options.slidesToScroll)
+        this.gotoItem(this.currentItem + this.slidesToScroll)
     }
 
     prev () {
-        this.gotoItem(this.currentItem - this.options.slidesToScroll)
+        this.gotoItem(this.currentItem - this.slidesToScroll)
 
     }
 
@@ -85,8 +88,8 @@ class carrousel {
 
     gotoItem (index) {
         if (index < 0){
-            index = this.items.length - this.options.slidesVisible
-        } else if (index >=this.items.length || (this.items[this.currentItem + this.options.slidesVisible] === undefined && index >this.currentItem)) {
+            index = this.items.length - this.slidesVisible
+        } else if (index >=this.items.length || (this.items[this.currentItem + this.slidesVisible] === undefined && index >this.currentItem)) {
             index = 0
         }
         let translateX = index * -100 / this.items.length
@@ -103,6 +106,15 @@ class carrousel {
         this.moveCallbacks.push(cb)
     }
 
+    resize () {
+        let mobile = window.innerWidth < 800
+        if (mobile !== this.isMobile) {
+            this.isMobile = mobile
+            this.setStyle()
+            this.moveCallbacks.forEach(cb => cb(this.currentItem))
+
+        }
+    }
 
     /*
     * @param {string} className
@@ -114,14 +126,23 @@ class carrousel {
     div.setAttribute('class', className)
     return div
    }
+
+   get slidesToScroll () {
+    return this.isMobile ? 1 : this.options.slidesToScroll
+   }
+
+   get slidesVisible () {
+    return this.isMobile ? 1 : this.options.slidesVisible
+   }
+
 }
 
 document.addEventListener('DOMContentLoaded', function (){
 
-    new carrousel (document.querySelector('.carrousel'), {
+    new carrousel (document.querySelector('.bloc3'), {
         slidesToScroll: 1,
         slidesVisible: 5,
-        loop: false
+        loop: false,
     })
 
 })
