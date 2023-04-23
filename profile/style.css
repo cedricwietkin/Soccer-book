@@ -42,24 +42,26 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
 
 /** main */
 
+
+
 .bloc1{
     margin-top: 75px;
-    margin-left: 10%;
+    text-align:center
 }
 
-.baniere{
-    width: calc(100%/1);
+.photo-baniere{
+    width:80%;
 }
 
 .pipo{
     display: flex ;
-    margin-top: 20px;
+  
 }
 
 .infojoueur{
     background-color: gray;
-    width: 40%;
-    margin-left: 23.75%;
+    width: 20%;
+    margin-left: 56%;
 }
 
 .bloc2{
@@ -77,6 +79,12 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
     margin-left: 21%;
 }
 
+.bloc3{
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
 /** caraousel */
 
 .carousel{
@@ -86,7 +94,6 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
 
 .carousel-item{
     float: left;
-    margin-left: 10px;
 }
 
 .carousel-container {
@@ -132,7 +139,13 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
     transition: transform 0.3s;
 }  
 
+.item{
+    position: relative;
+}
 
+.photo-item{
+    width: ratio;
+}
 
 /** footer */
 
@@ -163,3 +176,7 @@ footer a {
         display: inline-block;
         margin-inline: 3rem;
     }
+
+
+
+

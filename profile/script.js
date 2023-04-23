@@ -62,13 +62,6 @@ class carrousel {
         this.root.appendChild(prevButton)
         nextButton.addEventListener('click', this.next.bind(this))
         prevButton.addEventListener('click', this.prev.bind(this))
-        /*this.onMove(index => {
-            if (index === 0) {
-                nextButton.classList.add('carousel-next-hidden')
-            } else {
-                nextButton.classList.remove('carousel-next-hidden')   
-            }
-        })*/
     }
 
     next () {
@@ -141,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function (){
 
     new carrousel (document.querySelector('.bloc3'), {
         slidesToScroll: 1,
-        slidesVisible: 5,
+        slidesVisible: 4,
         loop: false,
     })
 
