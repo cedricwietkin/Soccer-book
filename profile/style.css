@@ -48,7 +48,9 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
 
 /** main */
 
-
+.lesbouttons{
+    align-items: end;
+}
 
 .bloc1{
     margin-top: 75px;
@@ -84,7 +86,7 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
 
 .stat{
     background-color: gray;
-    width: 35%;
+    width: 45%;
     border-radius: 20px;
 }
 
@@ -298,6 +300,10 @@ footer a {
         margin-top: 20px;
     }
 
+    .top-nav a{
+        color: #FFF;
+    }
+
     nav  a{ /* tous les liens a à l'intérieur de la balise nav */
         float: left; /* effet flottant */
         text-decoration: none; /* pas d'héritage avec effet souligné */
@@ -361,6 +367,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 
 .menu > li {
   margin: 0 1rem;
@@ -431,6 +438,11 @@ html, body {
     justify-content: center;
     align-items: center;
   }
+
+  .logoburger{
+    color: black;
+  }
+
   #menu-toggle ~ .menu li {
     height: 0;
     margin: 0;
@@ -439,7 +451,6 @@ html, body {
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   #menu-toggle:checked ~ .menu li {
-    border: 1px solid #333;
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
