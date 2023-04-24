@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Digital Sprint Becode TC">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soccer book reservation page">
+    <title>Mes réservations</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="style-tim-phone.css">
+</head>
+<body>
+    <header>
+        <section class="header-title-line">
+            <div id="Logo">
+                <img src="Logo.svg">
+            </div>
+            <button class="menu-button">
+                <div class="menu-icon"></div>
+            </button>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a class="LienNavbar" href="">Accueil<img src="Home.svg" alt="Home page icon"></li>
+                <li><a class="LienNavbar" href="">Profil<img src="Ami(e)s.svg" alt="Partage page icon"></li>
+                <li> <a class="LienNavbar" href="">Réservation<img src="Story.svg" alt="Diffusion page icon"></a></li>
+                <li>  <a class="LienNavbar" href="">?<img src="Notif.svg" alt="Notif page icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="container1">
+            <div>
+                <img src="hall-omnisport-de-bressoux.jpeg" alt="Photo hall omnisport 1" title="Hall omnisport 1" width="1024" height="684">
+                <table>
+                    <tr>
+                            <td><strong>Nom:</strong></td>
+                            <td>Hall omnisport 1</td>
+                    </tr>
+                    <tr>
+                            <td><strong>Adresse:</strong></td>
+                            <td>1 Rue X - 4000 Liège</td>
+                    </tr>
+                    <tr>
+                            <td><strong>Numéro:</strong></td>
+                            <td>+32490123456</td>
+                    </tr>
+                    <tr>
+                            <td><strong>E-mail:</strong></td>
+                            <td>hallomnisport1@gmail.com</td>
+                    </tr>
+                </table>
+                <form method="post">
+                    <fieldset>
+                        <legend>Inscription</legend>
+                        <p>
+                            <label for="date"><strong>Sélectionner une date:</strong></label>
+                            <input type="datetime-local" id="date" name="date" required >
+                        </p>
+                        <p>
+                            <label for="age"><strong>Sélectionner un âge:</strong></label>
+                            <select name="age" id="age" >                       
+                                <option value="16-20">16-20 ans</option>
+                                <option value="21-25">21-25 ans</option>
+                                <option value="26-30">26-29 ans</option>
+                                <option value="31-35">30-35 ans</option>
+                                <option value="36-40">36-39 ans</option>
+                                <option value="41-50">41-50 ans</option>
+                                <option value="51-60">51-60 ans</option>
+                                <option value="+60">+60 ans</option>
+                            </select>
+                        </p>
+                        <p>
+                            <strong>Sélectionner un niveau:<br></strong>
+                            <input type="radio" name="niveau" id="loisir" value="loisir">
+                            <label for="loisir">Loisir</label>
+                            <input type="radio" name="niveau" id="classé" value="classé">
+                            <label for="classé">Classé</label>
+                        </p>
+                        <button class="button" type="button">Réserver</button>  
+                    </fieldset>    
+                </form>
+            </div>  
+    </section>
+    <section id="container2">
+            <div>
+                <img src="hall-omnisport-outremeuse.jpeg" alt="Photo hall omnisport 2" title="Hall omnisport 2" width="600" height="400">
+                <table>
+                    <tr>
+                            <td><strong>Nom:</strong></td>
+                            <td>Hall omnisport 2</td>
+                    </tr>
+                    <tr>
+                            <td><strong>Adresse:</strong></td>
+                            <td>1 Rue Y - 4000 Liège</td>
+                    </tr>
+                    <tr>
+                            <td><strong>Numéro:</strong></td>
+                            <td>+32490123456</td>
+                    </tr>
+                    <tr>
+                            <td><strong>E-mail:</strong></td>
+                            <td>hallomnisport2@gmail.com</td>
+                    </tr>
+                </table>
+                <form method="post">
+                    <fieldset>
+                        <legend>Inscription</legend>
+                        <p>
+                            <label for="date"><strong>Sélectionner une date:</strong></label>
+                            <input type="datetime-local" id="date" name="date" required >
+                        </p>
+                        <p>
+                            <label for="age"><strong>Sélectionner un âge:</strong></label>
+                            <select name="age" id="age" >                       
+                                <option value="16-20">16-20 ans</option>
+                                <option value="21-25">21-25 ans</option>
+                                <option value="26-30">26-29 ans</option>
+                                <option value="31-35">30-35 ans</option>
+                                <option value="36-40">36-39 ans</option>
+                                <option value="41-50">41-50 ans</option>
+                                <option value="51-60">51-60 ans</option>
+                                <option value="+60">+60 ans</option>
+                            </select>
+                        </p>
+                        <p>
+                            <strong>Sélectionner un niveau:<br></strong>
+                            <input type="radio" name="niveau" id="loisir" value="loisir">
+                            <label for="loisir">Loisir</label>
+                            <input type="radio" name="niveau" id="classé" value="classé">
+                            <label for="classé">Classé</label>
+                        </p>
+                        <button class="button" type="button">Réserver</button>  
+                    </fieldset>    
+                </form>
+            </div>  
+    </section>
+    <section id="container3">
+            <div>
+                <figure></figure>
+                <img src="hall-omnisport-3.jpg" alt="Photo hall omnisport 3" title="Hall omnisport 3" width="864" height="486">
+                <table>
+                    <tr>
+                            <td><strong>Nom:</strong></td>
+                            <td>Hall omnisport 3</td>
+                    </tr>
+                    <tr>
+                            <td><strong>Adresse:</strong></td>
+                            <td>1 Rue Z - 4000 Liège</td>
+                    </tr>
+                    <tr>
+                            <td><strong>Numéro:</strong></td>
+                            <td>+32490123456</td>
+                    </tr>
+                    <tr>
+                            <td><strong>E-mail:</strong></td>
+                            <td>hallomnisport3@gmail.com</td>
+                    </tr>
+                </table>
+                <form method="post">
+                    <fieldset>
+                        <legend>Inscription</legend>
+                        <p>
+                            <label for="date"><strong>Sélectionner une date:</strong></label>
+                            <input type="datetime-local" id="date" name="date" required >
+                        </p>
+                        <p>
+                            <label for="age"><strong>Sélectionner un âge:</strong></label>
+                            <select name="age" id="age" >                       
+                                <option value="16-20">16-20 ans</option>
+                                <option value="21-25">21-25 ans</option>
+                                <option value="26-30">26-29 ans</option>
+                                <option value="31-35">30-35 ans</option>
+                                <option value="36-40">36-39 ans</option>
+                                <option value="41-50">41-50 ans</option>
+                                <option value="51-60">51-60 ans</option>
+                                <option value="+60">+60 ans</option>
+                            </select>
+                        </p>
+                        <p>
+                            <strong>Sélectionner un niveau:<br></strong>
+                            <input type="radio" name="niveau" id="loisir" value="loisir">
+                            <label for="loisir">Loisir</label>
+                            <input type="radio" name="niveau" id="classé" value="classé">
+                            <label for="classé">Classé</label>
+                        </p>
+                        <button class="button" type="button">Réserver</button>  
+                    </fieldset>    
+                </form>
+            </div>  
+    </section>
+
+    </main>
+
+</body>
+</html>
