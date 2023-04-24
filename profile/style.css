@@ -28,16 +28,16 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
     color: #ffffff; /* couleur du texte */
     background: yellow; /* couleur de fond */
     height: 55px; /* hauteur */
-    line-height: 33px; /* interligne */
+    line-heght: 33px; /* interligne */
     padding: 0 25px; /* marges intérieur */
     font-family: sans-serif; /* police d'écriture */
-    font-size: 13px; /* taille du texte */
+    font-size: 45px; /* taille du texte */
     transition: .5s; /* temps de transition lors du hover : une demi seconde */
     }
     nav  a:hover{ /* tous liens lors du survol dans la balise nav */
     background: #f43c80; /* couleur de fond */
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
     }
 
 /** main */
@@ -55,34 +55,39 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
 
 .pipo{
     display: flex ;
-  
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
 }
 
 .infojoueur{
     background-color: gray;
-    width: 20%;
-    margin-left: 56%;
+    width: 30%;
+    border-radius: 1.5%;
 }
 
+
 .bloc2{
-    margin-top: 50px;
+    margin-top: 2%;
     margin-left: 10%;
+    margin-right: 10%;
     display: flex;
+    justify-content: space-between;
 }
 
 .stat{
     background-color: gray;
-    width: 500px;
+    width: 35%;
+    border-radius: 1.5%;
 }
 
-.lesbouttons{
-    margin-left: 21%;
-}
 
 .bloc3{
     width: 90%;
     display: flex;
     margin: auto;
+    margin-top: 4%;
 }
 
 /** caraousel */
@@ -180,3 +185,118 @@ footer a {
 
 
 
+    
+      
+      
+      
+     
+
+      
+      
+@media screen and (max-width: 800px) {
+    #Logo{
+        transform: scale(0.5)
+    }
+
+    #IconProfil{
+        transform: scale(0.5)
+    }
+
+    #LienNav{
+        transform: scale(0.5)
+    }
+
+    #ContainerNav{
+        display: flex;
+        flex-direction: row  ;
+        background: yellow;
+        width: auto;
+        height: 30px;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    nav  a{ /* tous les liens a à l'intérieur de la balise nav */
+        float: left; /* effet flottant */
+        text-decoration: none; /* pas d'héritage avec effet souligné */
+        color: #ffffff; /* couleur du texte */
+        background: yellow; /* couleur de fond */
+        height: 27.5px; /* hauteur */
+        line-heght: 33px; /* interligne */
+        padding: 0 12.5px; /* marges intérieur */
+        font-family: sans-serif; /* police d'écriture */
+        font-size: 22.5px; /* taille du texte */
+        transition: .5s; /* temps de transition lors du hover : une demi seconde */
+        }
+        nav  a:hover{ /* tous liens lors du survol dans la balise nav */
+        background: #f43c80; /* couleur de fond */
+        display: flex;
+        justify-content: space-between;
+        }
+
+.lesbouttons{
+    transform: scale(0.7)
+}
+}    
+       
+@media screen and (max-width: 500px) {
+    .profile-edit{
+        transform: scale(0.6)
+    }
+
+    .pipo{
+        margin-left: 2%;
+    }
+
+
+    #Logo{
+        transform: scale(0.5)
+    }
+
+    #IconProfil{
+        transform: scale(0.5)
+    }
+
+    #LienNav{
+        transform: scale(0.5)
+    }
+
+    #ContainerNav{
+        display: flex;
+        flex-direction: row  ;
+        background: yellow;
+        width: auto;
+        height: 30px;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    nav  a{ /* tous les liens a à l'intérieur de la balise nav */
+        float: left; /* effet flottant */
+        text-decoration: none; /* pas d'héritage avec effet souligné */
+        color: #ffffff; /* couleur du texte */
+        background: yellow; /* couleur de fond */
+        height: 27.5px; /* hauteur */
+        line-heght: 33px; /* interligne */
+        padding: 0 12.5px; /* marges intérieur */
+        font-family: sans-serif; /* police d'écriture */
+        font-size: 22.5px; /* taille du texte */
+        transition: .5s; /* temps de transition lors du hover : une demi seconde */
+        }
+        nav  a:hover{ /* tous liens lors du survol dans la balise nav */
+        background: #f43c80; /* couleur de fond */
+        display: flex;
+        justify-content: space-between;
+        }
+
+.lesbouttons{
+    transform: scale(0.5)
+}
+
+.stat{
+    width: 50%;
+}
+}    
+    
